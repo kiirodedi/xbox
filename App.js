@@ -11,11 +11,15 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerStyle: { backgroundColor: '#077d07' },
+          headerTintColor: '#fff'
+        }}>
         <Stack.Screen name="Início" component={ TelaInicial } />
         <Stack.Screen name="TelaConsole" component={ TelaConsole } />
-        <Stack.Screen name="Jogos" component={ TelaJogos } />
-        <Stack.Screen name="Nuvem" component={ TelaNuvem } />
+        <Stack.Screen name="TelaJogos" component={ TelaJogos } />
+        <Stack.Screen name="TelaNuvem" component={ TelaNuvem } />
       </Stack.Navigator>
     </NavigationContainer>
   );

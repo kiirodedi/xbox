@@ -4,6 +4,7 @@ import { StyleSheet, View, Image, Text, Pressable } from 'react-native';
 import xboxLogo from '../assets/img/xboxLogo.png';
 import consoleIcon from '../assets/img/consoleIcon.png';
 import jogosIcon from '../assets/img/jogosIcon.png'
+import nuvemIcon from '../assets/img/nuvemIcon.png'
 
 export default function TelaInicial(props) {
   return (
@@ -29,7 +30,7 @@ export default function TelaInicial(props) {
         <Pressable
           onPress={ () => { props.navigation.navigate("TelaNuvem") } }
           style={estilo.btn}>
-            <Image source={consoleIcon} style={estilo.iconBtn}/>
+            <Image source={nuvemIcon} style={estilo.iconBtn}/>
             <Text style={estilo.textBtn}>Nuvem</Text>
         </Pressable>
 
